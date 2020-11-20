@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block content %}
+    <h1> Title! </h1>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>Choose a city...</option>
+          <option value="1">Oakland</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+    <image src = "{{url_for('static', filename = 'images/rain_wikimedia.jpg')}}" alt = "Raindrops" width = "100%">
+
+{% endblock %}
